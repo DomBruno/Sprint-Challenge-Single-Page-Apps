@@ -10,8 +10,7 @@ export default function CharacterList(props) {
     .get("https://rickandmortyapi.com/api/character/")
     .then(response => {
       setChars(response.data.results);
-      console.log(chars);
-    })
+         })
     .catch(error => {
       console.log("error", error);
     });
