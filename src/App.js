@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
 import LocationList from "./components/LocationsList.js";
+import EpisodesList from "./components/EpisodesList";
 //import AppRouter from "./components/AppRouter.js";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <WelcomePage />
       <CharacterList />
       <LocationList />
+      <EpisodesList />
     </main>
   );
 }
