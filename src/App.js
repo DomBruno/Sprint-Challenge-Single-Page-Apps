@@ -9,11 +9,11 @@ export default function App() {
   return (
     <main>
       <Header />
-     
+      <TabNav />
       <WelcomePage />
       <CharacterList />
     </main>
   );
 }
 
-// inset me after TabNav if needed:  <TabNav />  <AppRouter />
+// inset me after TabNav if needed:    <AppRouter />
