@@ -5,7 +5,7 @@ export default function LocationCard(props) {
   const extra = (
     <a>
       <Icon name="users" />
-      {props.residents} residents
+      {props.characters} characters appeared in this episode.
     </a>
   )
 
@@ -15,8 +15,8 @@ export default function LocationCard(props) {
 
     <Card
       header={props.name}
-      meta={props.type}
-      description={props.dimension}
+      meta={props.date}
+      description={props.episode}
       extra={extra}
 
       />
