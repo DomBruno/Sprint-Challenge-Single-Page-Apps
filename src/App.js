@@ -5,19 +5,16 @@ import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
 import LocationList from "./components/LocationsList.js";
 import EpisodesList from "./components/EpisodesList";
-//import AppRouter from "./components/AppRouter.js";
+import AppRouter from "./components/AppRouter.js";
 
 export default function App() {
   return (
     <main>
       <Header />
       <TabNav />
-      <WelcomePage />
-      <CharacterList />
-      <LocationList />
-      <EpisodesList />
+      <AppRouter />
     </main>
   );
 }
 
-// inset me after TabNav if needed:    <AppRouter />
+// inset me after TabNav if needed:    
