@@ -12,8 +12,9 @@ export default function TabNav() {
       ]
       
 
-      
+    
       const TabNav = () => <Tab panes={panes} />
+    
       return TabNav;
 
 
