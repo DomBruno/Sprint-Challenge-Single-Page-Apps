@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {Image} from 'semantic-ui-react';
 import CharacterCard from './CharacterCard';
 
 export default function CharacterList(props) {
@@ -22,12 +21,13 @@ export default function CharacterList(props) {
     <section className="character-list grid-view">
       {chars.map(char => (
        <CharacterCard 
-        key={character.id}
+        key={char.id}
         img={char.image}
         name={char.name}
-        status={char.status}
+        species={char.species}
         location={char.location.name}
         origin={char.origin.name}
+        episodes={char.episode.length}
         />
     ))}
   </section>
