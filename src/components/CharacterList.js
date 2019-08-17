@@ -1,16 +1,40 @@
 import React, { useEffect, useState } from "react";
+import Axios from "axios";
+import {Image} from 'semantic-ui-react';
 
-export default function CharacterList() {
-  // TODO: Add useState to track data from useEffect
+export default function CharacterList(props) {
+  const [chars, setChars] = useState({});
+  
+  useEffect(() => {
+    
+    })
+  })
 
   useEffect(() => {
-    // TODO: Add AJAX/API Request here - must run in `useEffect`
+    Axios
+    .get("https://rickandmortyapi.com/api/character/")
+    .then(response => {
+      setChars(response.data);
+      console.log(chars);
+    })
+    .catch(error => {
+      return (
+        "Loading Files..."
+      )
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
+  }, [chars]);
 
   return (
-    <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <section className="character-list grid-view">
+      {props.chars.map(char => (
+        <div>
+          <Image src={char.image} />
+          <h2>{char.name}</h2>
+          
+        </div>
+
+      
+      <h2></h2>
     </section>
   );
 }
